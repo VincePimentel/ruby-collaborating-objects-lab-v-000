@@ -6,10 +6,10 @@ class Song
   end
 
   def self.new_by_filename(filename)
-    songx = filename.split(" - ")[1]
-    artist = filename.split(" - ")[0]
-    song = self.new(songx)
-    song.artist_name = artist
+    parsed_song = filename.split(" - ")[1]
+    parsed_artist = filename.split(" - ")[0]
+    song = self.new(parsed_song)
+    song.artist_name = parsed_artist
     song
   end
 
