@@ -26,7 +26,7 @@ class Artist
       name = self.new(name)
       name.save
     end
-    name_exists
+    name_exists || name
   end
 
   def print_songs
