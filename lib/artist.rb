@@ -24,7 +24,7 @@ class Artist
     if !self.all.include?(name)
       name = self.new(name)
     else
-      self.all.find(name)
+      self.all.find { |artist| artist.name = name}
     end
   end
 
