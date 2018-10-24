@@ -6,8 +6,6 @@ class MP3Importer
   end
 
   def files
-    Dir["/spec/fixtures/mp3s/*"].each do |file|
-      @@files << file
-    end
+
   end
 end
