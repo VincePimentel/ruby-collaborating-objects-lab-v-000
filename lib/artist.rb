@@ -24,7 +24,7 @@ class Artist
     if !@@all.include?(name)
       name = self.new(name)
     else
-      @@all.find { |x| x == name }
+      @@all.find { |x| x == self }
     end
   end
 end
