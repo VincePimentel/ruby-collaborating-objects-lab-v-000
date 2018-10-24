@@ -24,7 +24,7 @@ class Artist
     if !self.all.include?(name)
       name = self.new(name)
     else
-      self
+      return self
     end
   end
 end
