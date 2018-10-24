@@ -3,7 +3,7 @@ class Song
 
   def initialize(name)
     @name = name
-    @artist = String.new
+    @artist = Array.new
   end
 
   # def artist
