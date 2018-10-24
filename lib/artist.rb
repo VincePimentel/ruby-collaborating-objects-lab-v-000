@@ -23,6 +23,7 @@ class Artist
   def self.find_or_create_by_name(name)
     if !self.all.include?(name)
       name = self.new(name)
+      name.save
     else
       self.all.find { |artist| artist.name = name }
     end
@@ -32,4 +33,3 @@ class Artist
 
   end
 end
- 
