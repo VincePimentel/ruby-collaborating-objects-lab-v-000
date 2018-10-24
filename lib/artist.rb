@@ -22,7 +22,7 @@ class Artist
 
   def self.find_or_create_by_name(name)
     if !self.include?(name)
-      name = self.new(name)
+      song = Song.new(name)
     end
   end
 
