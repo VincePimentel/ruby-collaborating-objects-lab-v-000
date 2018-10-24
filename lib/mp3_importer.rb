@@ -8,6 +8,6 @@ class MP3Importer
   end
 
   def files
-    @@files << Dir["/spec/fixtures/mp3s/*"]
+    @@files << Dir["/spec/fixtures/mp3s/*.mp3"]
   end
 end
