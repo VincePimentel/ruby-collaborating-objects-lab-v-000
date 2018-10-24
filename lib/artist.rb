@@ -20,11 +20,11 @@ class Artist
     @@all << self
   end
 
-  # def self.find_or_create_by_name(name)
-  #   if !self.all.include?(name)
-  #     name = self.new(name)
-  #   else
-  #     return self
-  #   end
-  # end
+  def self.find_or_create_by_name(name)
+    if !@@all.include?(name)
+      name = self.new(name)
+    else
+      return self
+    end
+  end
 end
