@@ -24,6 +24,6 @@ class Artist
     if !self.name == name
       name = self.new(name)
     end
-    return self
+    return self.name
   end
 end
