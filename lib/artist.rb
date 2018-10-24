@@ -21,7 +21,7 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    if !@@all.include?(name)
+    if !self.include?(name)
       name = self.new(name)
     else
       @@all.find { |x| x == self.name }
