@@ -24,7 +24,6 @@ class Artist
     if !self.include?(name)
       name = self.new(name)
     end
-    return self
   end
 
   def print_songs
