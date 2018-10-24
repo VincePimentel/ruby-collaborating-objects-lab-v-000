@@ -1,11 +1,13 @@
 class MP3Importer
   attr_accessor :path
 
+  @@files = Array.new
+
   def initialize(path)
     @path = path
   end
 
   def files
-    Dir["/spec/fixtures/mp3s/*"]
+    @@files << Dir["/spec/fixtures/mp3s/*"]
   end
 end
