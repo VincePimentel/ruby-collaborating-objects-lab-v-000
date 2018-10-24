@@ -23,4 +23,8 @@ class Artist
   def self.find_or_create_by_name(name)
 
   end
+
+  def print_songs
+    @songs
+  end
 end
