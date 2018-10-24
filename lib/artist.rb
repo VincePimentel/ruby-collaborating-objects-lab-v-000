@@ -21,9 +21,7 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    if !self.include?(name)
-      song = Song.new(name)
-    end
+    name = self.new(name)
   end
 
   def print_songs
