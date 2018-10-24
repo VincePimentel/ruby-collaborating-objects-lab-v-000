@@ -3,14 +3,12 @@ class Song
 
   def initialize(name)
     @name = name
+    @artist = String.new
   end
 
   # def artist
   #   self.artist ? self.artist.name : nil
   # end
-  def artist=(name)
-
-  end
 
   def self.new_by_filename(filename)
     parsed_song = filename.split(" - ")[1]
