@@ -6,6 +6,6 @@ class MP3Importer
   end
 
   def files
-    Dir["/spec/fixtures/*.mp3"]
+    Dir["/spec/fixtures/mp3s/*"]
   end
 end
